@@ -283,4 +283,3 @@ if __name__ == '__main__':
     # clientModel = ClientNet().to(_device)
     # test_main(clientModel, sampler, fix, low, high, _device)
 
-    # send_message()
