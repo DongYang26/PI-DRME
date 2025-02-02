@@ -23,7 +23,7 @@ bash train_fl.sh
 ```
 bash train.sh
 ```
-(3) Standalone learning: enter ./standalone_badedDistV2 folder, then perform
+(3) Standalone learning: enter ./standalone_basedDistV2 folder, then perform
 ```
 bash train_standalone.sh
 ```
