@@ -297,12 +297,3 @@ def save_map(name, setup_name, test_step_ests, test_step_gts, batchsize):
 def save_model(best_model, model_directory, user_idx):
     torch.save(best_model, model_directory+'/' + f'client_{user_idx}_best.pth')
 
-
-def send_message():
-    headers = {"Authorization": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEyNjcwLCJ1dWlkIjoiOWE0ZGE2NmYtZWUzNS00YjdkLTllZDEtNDdhYTFhYjIzYjk0IiwiaXNfYWRtaW4iOmZhbHNlLCJiYWNrc3RhZ2Vfcm9sZSI6IiIsImlzX3N1cGVyX2FkbWluIjpmYWxzZSwic3ViX25hbWUiOiIiLCJ0ZW5hbnQiOiJhdXRvZGwiLCJ1cGsiOiIifQ.yp_ukVd6pTh7ifaJsuDlQPL5EWMdZoK-fUeC0noGMSml-predVShilCLBGzjnNdHS3o6Tn8gMV3mbWF0xdsj5g"}
-    resp = requests.post("https://www.autodl.com/api/v1/wechat/message/send",
-                         json={
-                             "title": "Standalone has been finished",
-                             "name": "Standalone has been finished"
-                         }, headers=headers)
-    print(resp.content.decode())
