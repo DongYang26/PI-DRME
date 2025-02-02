@@ -1,5 +1,5 @@
 # PI-DRME
-"Physics-Inspired Distributed Radio Map Estimation" 2025 IEEE International Conference on Communications.
+"Physics-Inspired Distributed Radio Map Estimation" 2025 IEEE International Conference on Communications. [Publish soon]
 
 ## Dataset
 
