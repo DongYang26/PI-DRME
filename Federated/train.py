@@ -265,4 +265,4 @@ if __name__ == '__main__':
     # _device = torch.device("cpu")  # If CUDA memory is sufficient, use cuda
     # model = RadioNet().to(_device)
     # test_main(model, sampler, fix, low, high, _device)
-    # send_message()
+    
