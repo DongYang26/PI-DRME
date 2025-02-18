@@ -322,7 +322,7 @@ def merge_eachClient_maps(federated_maps, original_size=256, num_splited=49):
                     start_w = j * stride
                     merged_map[start_h:start_h+submap_size,
                                start_w:start_w+submap_size] = federated_maps[n][m][0]
-                    m += 80  # !
+                    m += num_maps  # !
             merged_maps.append(merged_map)
         merged_maps_clients.append(merged_maps)
     return merged_maps_clients  # (9,4,256,256)
