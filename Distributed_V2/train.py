@@ -154,7 +154,6 @@ class Client:  # as a user
 
                     w_diff = posi / (nega+1e-14)
                     total_loss = lam * w_diff + beta * loss
-                    print(f"w_diffloss:{w_diff}")
                 else:
                     total_loss = loss
                 total_loss.backward()
