@@ -112,7 +112,7 @@ class RadioUNet_s(Dataset):
     def __getitem__(self, idx):
         idxr = np.floor(idx/self.numTx).astype(int)
         idxc = idx-idxr*self.numTx
-        map_index = [0, 449, 77, 78, 88, 94, 97, 109, 153, 179, 291, 341, 458]
+        map_index = [ 0, 77, 94, , , , , , , , , , ] # Select 9 map indices with heterogeneity, such as 0, 77, 94, etc. The rest is up to you.
         dataset_map_ind = map_index[self.client_id]
         # names of files that depend only on the map:
         name1 = str(dataset_map_ind) + ".png"
